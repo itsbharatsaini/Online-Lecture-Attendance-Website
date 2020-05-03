@@ -1,0 +1,9 @@
+CREATE TABLE users (
+	user_id int(250) NOT null AUTO_INCREMENT PRIMARY KEY,
+	name varchar(20),
+    	mail_id varchar(256) NOT null,
+	mob_no int,
+    	college_company Varchar(50),
+	session_date Varchar(20),
+	summary Varchar(2000)
+);
