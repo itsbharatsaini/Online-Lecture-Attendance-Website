@@ -12,6 +12,8 @@ Hey, This project is created using a docker with the help of python3 and mysql. 
     Like:
      > python3 main.py
 
+![](Main.png)
+
 # launched Website:
 You should be able to access the site with the IP of your host in the windows browser.
 Run the following command in any browser:
