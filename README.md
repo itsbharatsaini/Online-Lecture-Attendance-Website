@@ -18,7 +18,7 @@ Hey, This project is created using a docker with the help of python3 and mysql. 
 You should be able to access the site with the IP of your host in the windows browser.
 Run the following command in any browser:
 
-     > (IP of your host system):8888/index.php               {for ex:172.16.0.2:8888/index.php}
+     > (IP of your host system):8888/index.php               {for ex:192.168.43.192:8888/index.php}
 
 ![](Front-End.PNG)
 
