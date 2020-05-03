@@ -2,7 +2,7 @@
 Hey, This project is created using a docker with the help of python3 and mysql. This project help you for online Attendance Management by using h website. one single click and launch a complete website with mysql database. Website is use to maintain and manage the attendance of students/employees.
 
 # Requirements to Run this project:
---> You should have installed Redhat linux OS with python3.
+--> You should have installed Redhat linux OS with python.
 --> You should have yum with configure.
 
 # How to run this Project:
@@ -10,7 +10,7 @@ Hey, This project is created using a docker with the help of python3 and mysql. 
 2. change your dir to DockerPy.
 3. Then run main.py file using python3     
     Like:
-     > python3 main.py
+     > python main.py
 
 ![](Main.png)
 
