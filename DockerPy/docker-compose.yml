@@ -1,0 +1,31 @@
+version: '3'
+services:
+        database_os:
+                image: mysql:latest
+                volumes:
+                        - database_data:/var/lib/mysql  
+                restart: always
+                environment:
+                        MYSQL_ROOT_PASSWORD: myroot
+                        MYSQL_USER: mywebsite_data
+                        MYSQL_PASSWORD: 12345
+                        MYSQL_DATABASE: mydb
+
+        wordpress_os:
+                image: wordpress:latest 
+                restart: always
+                depends_on:
+                        - database_os
+                ports:
+                        - 8888:80
+                environment:
+                        WORDPRESS_DB_HOST: database_os
+                        WORDPRESS_DB_USER: mywebsite_data
+                        WORDPRESS_DB_PASSWORD: 12345
+                        WORDPRESS_DB_NAME: mydb
+                volumes:
+                        - website_data:/var/www/html
+
+volumes:
+        database_data:
+        website_data:
